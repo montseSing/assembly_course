@@ -1,5 +1,5 @@
 Bootstrap:docker
-From: ubuntu16.04
+From: continuumio/miniconda3:4.4.10
 
 %environment
     export PATH="/opt/conda/bin:/usr/local/bin:/usr/bin:/bin:"

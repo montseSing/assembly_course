@@ -1,13 +1,9 @@
 Bootstrap:docker
-From: continuumio/miniconda2
-
-%environment
-    export PATH="/opt/conda/bin:/usr/local/bin:/usr/bin:/bin:"
-    unset CONDA_DEFAULT_ENV
-    export ANACONDA_HOME=/opt/conda
+From: ubuntu:16.04
 
 %post
-    export PATH=/opt/conda/bin:$PATH
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+    bash miniconda.sh
     conda config --add channels defaults
     conda config --add channels conda-forge
     conda config --add channels bioconda

@@ -1,5 +1,5 @@
 Bootstrap:docker
-From: continuumio/miniconda3:4.4.10
+From: continuumio/miniconda2
 
 %environment
     export PATH="/opt/conda/bin:/usr/local/bin:/usr/bin:/bin:"
@@ -11,5 +11,5 @@ From: continuumio/miniconda3:4.4.10
     conda config --add channels defaults
     conda config --add channels conda-forge
     conda config --add channels bioconda
-    conda install --yes megahit=1.2.9=hfbae3c0_0
+    conda install --yes megahit
     conda install --yes prokka

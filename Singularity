@@ -12,4 +12,4 @@ From: ubuntu16.04
     conda config --add channels conda-forge
     conda config --add channels bioconda
     conda install --yes megahit=1.2.9=hfbae3c0_0
-    conda install --yes prokka=1.14.0=pl526_1
+    conda install --yes prokka
